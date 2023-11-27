@@ -1,0 +1,319 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--black, #0e1014);
+  position: relative;
+}
+.headerBall {
+  position: absolute;
+  right: 27rem;
+}
+.headerRedBall {
+  position: absolute;
+  left: 34.2rem;
+  top: 4rem;
+}
+header {
+  padding-top: 2.5rem;
+  height: 4.5625rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  /* flex-wrap: wrap; */
+  position: relative;
+}
+
+.infoheader {
+  width: 10.3125rem;
+  color: #e4e5ea;
+  font-family: Montserrat;
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+header section {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.linkContainer {
+  display: flex;
+  align-items: start;
+  margin: 0;
+  gap: 1.88rem;
+  flex-wrap: wrap;
+}
+.navContainer {
+  display: flex;
+  align-items: start;
+  gap: 2.94rem;
+  color: #e4e5ea;
+}
+header a {
+  text-decoration: none;
+  color: var(--light-text, #e4e5ea);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.iconsNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.88rem;
+}
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+  header img,
+  .infoheader,
+  .numberCall,
+  .headerRedBall,
+  .HeaderContainer {
+    display: none;
+  }
+  .linkContainer {
+    padding-left: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  header {
+    padding-left: 4%;
+    justify-content: center;
+  }
+}
+main {
+  width: 87%;
+  margin-left: 6%;
+  margin-top: 5.88rem;
+  display: flex;
+  justify-content: space-between;
+}
+.mainFirsContainer {
+  display: flex;
+  flex-direction: column;
+  color: var(--light-text, #e4e5ea);
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.main-seconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.94rem;
+  padding-top: 2.5rem;
+}
+h3,
+h2,
+h4,
+p {
+  color: #e4e5ea;
+}
+.firstBlock {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 55%;
+  height: 13rem;
+}
+.secondBlockMain {
+  width: 50%;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: start;
+  justify-content: flex-end;
+}
+.mainHeader {
+  color: var(--light-text, #e4e5ea);
+  text-align: right;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.05625rem;
+  text-transform: uppercase;
+  padding-top: 1.88rem;
+}
+.headerBlock {
+  padding-left: 1rem;
+  color: var(--light-text, #e4e5ea);
+  text-align: right;
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.colorHeader {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    rgb(206, 157, 33) 30%,
+    rgb(239, 128, 10) 20%,
+    rgb(227, 93, 10) 30%
+  );
+  -webkit-background-clip: text; /* Для Safari и браузеров на основе WebKit */
+  color: transparent; /* Делаем текст прозрачным, чтобы видеть градиентный эффект */
+  display: inline-block;
+  text-align: right;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.textBlock {
+  color: #e4e5ea;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.headerParagraph {
+  color: #e4e5ea;
+  font-family: Inter;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 3.5rem;
+}
+.gradienrTexr {
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    rgb(232, 203, 16) 30%,
+    rgb(239, 166, 10) 20%,
+    rgb(227, 144, 10) 30%
+  );
+  color: transparent; /* Делаем текст прозрачным, чтобы видеть градиентный эффект */
+  -webkit-background-clip: text; /* Для Safari и браузеров на основе WebKit */
+}
+.styleButton {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 6.5rem;
+  gap: 9.31rem;
+}
+.styleButton button {
+  background: #4077f3;
+  width: 16.375rem;
+  height: 3.8125rem;
+  flex-shrink: 0;
+  color: aliceblue;
+}
+.infoCom {
+  color: var(--dark-gray, #656566);
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1rem;
+  letter-spacing: 0.04375rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .mainFirsContainer,
+  .mainContainer,
+  .headerParagraph.main-seconContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-seconContainer {
+    flex-direction: column;
+    border: 2px solid red;
+  }
+}
+
+footer {
+  width: 87%;
+  height: 19.6875rem;
+  margin: 4.31rem 0 0 5.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.ristFooterBlock {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.textStyle {
+  color: var(--light-text, #e4e5ea);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.secondBlock {
+  width: 50%;
+  height: 17rem;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+  justify-content: start;
+  gap: 6.12rem;
+  align-items: flex-start;
+  line-height: 2rem;
+}
+.secondBlockContainer {
+  width: 29%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.secondBlockContainerr {
+  padding-top: 3rem;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.thridFooterBlock {
+  width: 29%;
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.textEnd {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  align-self: flex-end;
+  padding-top: 8rem;
+  color: var(--light-text, #e4e5ea);
+  text-align: right;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+}
+.footerIconStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.63rem;
+}
+
+/* /////// */
+@media (min-width: 320px) and (max-width: 768px) {
+}
